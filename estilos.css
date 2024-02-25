@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+}
+header{
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(194, 194, 194);
+}
+nav ul li :hover{
+    text-decoration: underline;
+    color: black;
+}
+footer{
+    width: 100%;
+    font-size: small;
+    color: white;
+    background-color: black;
+    text-align: end;
+}
+.contenidoi{
+    display: flex;
+    .inicio{
+        width: 99%;
+        padding: 5%;
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .noticias{
+        width: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
