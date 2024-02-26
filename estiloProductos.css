@@ -10,7 +10,43 @@
   background-attachment: fixed;
   z-index: -10;
 }
-.contenido{
+.fondo2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./img/UPA-fondo.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+}
+.fondo3{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./img/madri-fondo.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;   
+}
+.fondo4{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./img/mmcd-fondo.png);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10; 
+}
+.cuerpo-productos{
     background-color: white;
     width: 300px;
     display: flex;
