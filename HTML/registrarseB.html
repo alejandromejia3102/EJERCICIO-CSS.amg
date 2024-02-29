@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRARSE</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <div class="fondomenu"></div>
+    <div class="contenidor">
+        <div class="fondo-reg" style="height: 620px;">
+            <img src="/img/perfil-icono.png" alt="perfil" width="90px" style="opacity: 50%;">
+            <b style="font-size: 20px;">CREAR CUENTA</b>
+            <br><form action="/HTML/registrarse.html">
+                <fieldset>
+                    <legend style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">DATOS PERSONALES</legend>
+                <label for="nombre">NOMBRE</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" required>
+                <br><br>
+                <label for="apellidos">APELLIDOS</label>
+                <br>
+                <input type="text" name="apellidos" id="apellidos" size="40" required>
+                <br><br>
+                <label for="dni">DNI</label>
+                <br>
+			    <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]" required>
+                <br><br>
+                <label for="correo">CORREO ELECTRONICO</label>
+                <br>
+                <input type="text" name="correo" id="correo" size="40" required>
+            </fieldset>
+            <fieldset>
+                <legend style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">INFORMACIÓN DE CUENTA</legend>
+                <label for="usuario";>NOMBRE USUARIO</label>
+            <br>
+            <input type="text" name="usuario" id="usuario" required>
+            <br><br>
+            <label for="pass1" >CONTRASEÑA</label>
+            <br>
+            <input type="password" name="pass1" id="pass1" required>
+            <br><br>
+            <label for="pass2">REPETIR CONTRASEÑA</label>
+            <br>
+            <input type="password" name="pass2" id="pass2" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="CREAR CUENTA">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

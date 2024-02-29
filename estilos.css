@@ -2,7 +2,7 @@ body{
     margin: 0%;
 }
 header{
-    background-color: rgb(223, 223, 223);
+    background-color: rgba(0, 0, 0, 0.500);
     display: flex;
     justify-content: center;
     padding: 05px;
@@ -20,7 +20,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(194, 194, 194);
+    color: white;
 }
 nav ul li :hover{
     text-decoration: underline;
@@ -34,53 +34,54 @@ footer{
     text-align: end;
     position: absolute;
 }
+.fondomenu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+  opacity: 60%;
+}
 .contenidoi{
     display: flex;
     .inicio{
-        padding: 25px;
+        padding: 14px;
         width: 99%;
         font-size: 17px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .noticias{
-        padding: 5px;
-        width: 20%;
+        background-color: rgba(0, 0, 0, 0.500);
+        padding-left: 20px;
+        width: 30%px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 14px;
+        .noti1 :hover{
+            color: black;
+        }
+        .noti2 :hover{
+            color: black;
+        }
     }
 }
 .contenidop{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 6%;
     padding-bottom: 4.4%;
-    .prod1{
-        background-color: rgb(223, 223, 223);
-        padding: 20px;
+    .prod{
+        background-color: white;
+        padding: 17px;
         width: 250px;
         margin-left: 25px;
         margin-right: 25px;
-    }
-    .prod2{
-        background-color: rgb(223, 223, 223);
-        padding: 20px;
-        width: 250px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    .prod3{
-        background-color: rgb(223, 223, 223);
-        padding: 20px;
-        width: 250px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    .prod4{
-        background-color: rgb(223, 223, 223);
-        padding: 20px;
-        width: 250px;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-bottom: 40px;
     }
 }
 .cuerpo-productos{
@@ -101,57 +102,21 @@ footer{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 }
-.fondo{
+.fondo-producto{
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-image: url(./img/tlop-fondo.jpg);
     background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   z-index: -10;
-}
-.fondo2{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(./img/UPA-fondo.jpg);
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -10;
-}
-.fondo3{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(./img/madri-fondo.webp);
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -10;   
-}
-.fondo4{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(./img/mmcd-fondo.png);
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -10; 
 }
 .contenidoc{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .ubicacion{
         margin: 40px;
         border-width: thick;
@@ -171,7 +136,7 @@ footer{
         }
     }
     .info{
-        border-width: 20px;
+        border-width: 10px;
         border-color: black;
         border-style: solid;
         border-radius: 30px;
@@ -179,7 +144,7 @@ footer{
         background-color: white;    
         margin: 17px;
         text-align: center;
-        padding-top: 5px;
+        padding-top: 17px;
         .titulo{
             display: flex;
             align-items: center;
@@ -214,9 +179,32 @@ footer{
             width: 20px;
             height: 20px;
             margin-left: 105px;
-            margin-top: 190px;
+            margin-top: 200px;
             padding: 5px;
         }
+        }
+        
+    }
+}
+.contenidor{ 
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    .fondo-reg{
+        background-color: rgba(255, 255, 255, 0.700);
+        height: 437px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        a{
+            background-color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            width: 170px;
+            text-align: center;
         }
         
     }
