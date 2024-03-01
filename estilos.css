@@ -48,27 +48,37 @@ footer{
   opacity: 60%;
 }
 .contenidoi{
-    display: flex;
     .inicio{
-        padding: 14px;
-        width: 99%;
+        padding: 30px;
         font-size: 17px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .noticias{
-        background-color: rgba(0, 0, 0, 0.500);
-        padding-left: 20px;
-        width: 30%px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
-        .noti1 :hover{
-            color: black;
+        background-color: rgba(0, 0, 0, 0.900);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        .contenido{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
         }
-        .noti2 :hover{
+        a{
+            margin: 40px;
+            width: 255px;
+            padding: 10px;
+            
+        }
+        }
+        a :hover{
+            background-color: white;
+            border-radius: 20px;
             color: black;
         }
     }
-}
+
 .contenidop{
     display: flex;
     justify-content: center;
