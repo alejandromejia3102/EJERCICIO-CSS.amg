@@ -1,38 +1,45 @@
 body{
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color: rgba(0, 0, 0, 0.500);
     display: flex;
-    justify-content: center;
-    padding: 05px;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 0%;
+    padding-top: 25px;
+    padding-left: 150px;
+        nav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        }
+            nav ul li{
+            display: inline-block;
+            padding-right: 25px;
+            }
+                nav ul li a{
+                text-decoration: none;
+                font-size: 15px;
+                color: rgb(119, 119, 119);
+                }
+                    nav ul li :hover{
+                    text-decoration: underline;
+                    color: black;
+                    }
     
 }
-nav ul li{
-    display: inline-block;
-    padding-right: 40px;
+.carrito_icono{
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 50px;
+    padding-right: 20px;
+    opacity: 50%;
+    cursor: pointer;
 }
-nav ul li a{
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-nav ul li :hover{
-    text-decoration: underline;
-    color: black;
-}
+
 footer{
-    width: 100%;
+    padding: 20px;
     font-size: small;
-    color: white;
-    background-color: black;
     text-align: end;
-    position: absolute;
 }
 .fondomenu{
     position: fixed;
@@ -45,20 +52,23 @@ footer{
   background-size: cover;
   background-attachment: fixed;
   z-index: -10;
-  opacity: 60%;
+  opacity: 25%;
 }
 .contenidoi{
     .inicio{
-        padding: 30px;
+        padding-left: 25%;
+        padding-right: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 17px;
     }
     .noticias{
         background-color: rgba(0, 0, 0, 0.900);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 20px;
-        border-radius: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+
         .contenido{
             display: flex;
             justify-content: center;
@@ -66,16 +76,15 @@ footer{
             
         }
         a{
-            margin: 40px;
+            margin: 10px;
             width: 255px;
-            padding: 10px;
             
         }
         }
         a :hover{
             background-color: white;
-            border-radius: 20px;
             color: black;
+            border-radius: 10px;
         }
     }
 
@@ -83,15 +92,15 @@ footer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 6%;
-    padding-bottom: 4.4%;
+    padding: 35px;
     .prod{
-        background-color: white;
-        padding: 17px;
+        padding: 15px;
         width: 250px;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 40px;
+        margin: 30px;
+    }
+    .prod:hover{
+        text-decoration: underline;
+        background-color: white;
     }
 }
 .cuerpo-productos{
@@ -109,7 +118,6 @@ footer{
         text-align: center;
         padding: 25px;
         border-radius: 15px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 }
 .fondo-producto{
@@ -123,79 +131,6 @@ footer{
   background-attachment: fixed;
   z-index: -10;
 }
-.contenidoc{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .ubicacion{
-        margin: 40px;
-        border-width: thick;
-        border-color: black;
-        border-style: solid;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .titulo{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            border-width: thick;
-            border-color: black;
-            border-style: solid;
-            justify-content: center;
-        }
-    }
-    .info{
-        border-width: 10px;
-        border-color: black;
-        border-style: solid;
-        border-radius: 30px;
-        width: 250px;
-        background-color: white;    
-        margin: 17px;
-        text-align: center;
-        padding-top: 17px;
-        .titulo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .ubi{
-            display: flex;
-            align-items: center;
-            justify-content: baseline;
-            padding-left: 10px;
-        }
-        .correo{
-            display: flex;
-            align-items: center;
-            justify-content: baseline;
-            padding-left: 10px;
-        }
-        .tel{
-            display: flex;
-            align-items: center;
-            justify-content: baseline;
-            padding-left: 10px;
-        }
-        .botones{
-            background-color: black;
-            .boton{
-            background-color: white;
-            border-width: 10px;
-            border-color: black;
-            border-style: solid;
-            border-radius: 100%;
-            width: 20px;
-            height: 20px;
-            margin-left: 105px;
-            margin-top: 200px;
-            padding: 5px;
-        }
-        }
-        
-    }
-}
 .contenidor{ 
     display: flex;
     justify-content: center;
@@ -208,10 +143,8 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
         a{
             background-color: red;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: white;
             width: 170px;
             text-align: center;
@@ -219,3 +152,47 @@ footer{
         
     }
 }
+.contenidoc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contacto{
+        width: 700px;
+        height: 400px;
+        margin: 50px;
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+            .info2{
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                height: 50px;
+                width: 300px;
+                margin: 20px;
+                font-size: small;
+                align-items: center;
+                padding: 4px;
+                border: 1px;
+                border-style: solid;
+            }
+            .info2 :hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    .ubi{
+        background-color: rgba(0, 0, 0, 0.300);
+        width: 100%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+} 
+.ubi a :hover{
+            width: 875px;
+            opacity: 75%;
+        }
